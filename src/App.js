@@ -1,13 +1,13 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
 import './App.css';
-import Home from './Home.js';
-import AboutUs from './AboutUs.js';
-import Contacts from './Contacts.js';
-import SignUp from './SignUp.js';
-import SignIn from './SignIn.js';
-import RestaurantList from './RestaurantList.js';
+import Home from './Home';
+import AboutUs from './AboutUs';
+import Contacts from './Contacts';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
+import RestaurantList from './RestaurantList';
 
 function App() {
   return (

@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 
 const RestaurantList = () => {
   const allRestaurants = [
-    { id: 1, name: 'Cafe XYZ', cuisine: 'Italian', image: 'cafe-xyz.jpg' },
-    { id: 2, name: 'Burger Joint', cuisine: 'American', image: 'burger-joint.jpg' },
-    { id: 3, name: 'Sushi Bar', cuisine: 'Japanese', image: 'sushi-bar.jpg' },
-    { id: 4, name: 'Spice Kingdom', cuisine: 'Indian', image: 'spice-kingdom.jpg' },
-    // Add more restaurants as needed
+    { id: 1, name: 'Cafe XYZ', cuisine: 'Italian', image: '/cafe-xyz.jpg' },
+    { id: 2, name: 'Burger Joint', cuisine: 'American', image: '/burger-joint.jpg' },
+    { id: 3, name: 'Sushi Bar', cuisine: 'Japanese', image: '/sushi-bar.jpg' },
+    { id: 4, name: 'Spice Kingdom', cuisine: 'Indian', image: '/spice-kingdom.jpg' },
   ];
 
   const [filteredRestaurants, setFilteredRestaurants] = useState(allRestaurants);
@@ -30,8 +29,8 @@ const RestaurantList = () => {
       <ul>
         {filteredRestaurants.map(restaurant => (
           <li key={restaurant.id}>
-            <img src={`/images/${restaurant.image}`} alt={restaurant.name} />
-            <strong>{restaurant.name}</strong> - {restaurant.cuisine}
+            <img src={`${restaurant.image}`} alt={restaurant.name} />
+            <strong>{restaurant.name}</strong> 
           </li>
         ))}
       </ul>
